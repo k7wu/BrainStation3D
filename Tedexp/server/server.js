@@ -15,9 +15,11 @@ app.use(express.json());
 // serve public files e.g. index.html
 app.use(express.static("public"));
 
-// get, post, put methods for /api/videos
-const videoRoutes = require("./routes/api/videos");
-app.use("/api/videos", videoRoutes);
+// get, post, put methods for /api/warehouses
+const tedRoutes = require("./routes/api/ted");
+app.use("/api/ted", tedRoutes);
 
 // start the server and listen on port 5000
-app.listen(PORT, () => {});
+app.listen(PORT, () => {
+    console.log(`server is running at: ${BACKEND_URL}:${PORT}`);
+});
