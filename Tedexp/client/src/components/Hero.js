@@ -1,4 +1,5 @@
 import React from "react";
+import Topics from "./Topics";
 
 export default function Hero(props) {
   return (
@@ -10,6 +11,7 @@ export default function Hero(props) {
             <h2 className="hero__subtitle">Connecting you to speakers</h2>
           </div>
           <h2 className="hero__subtitle-one">What interests you?</h2>
+          <Topics />
         </div>
       </div>
     </div>
