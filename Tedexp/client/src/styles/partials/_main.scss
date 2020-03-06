@@ -1,8 +1,25 @@
 /* mobile-styling-start */
+
 .main {
   margin: 1rem;
   &__main-container {
     display: flex;
   }
+}
+
+.hero__btn-topic {
+  background-color: transparent;
+  // background-color: black;
+  padding: 12px;
+  width: 160px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 0px;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  border-radius: 16px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(255, 255, 255);
+  // border-image: initial;
+  // transition: all 0.15s linear 0s;
 }
 /* mobile-styling-end */
