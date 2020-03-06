@@ -2,7 +2,7 @@ import React from "react";
 import Hero from "./Hero";
 import Main from "./Main";
 import Comments from "./Comments";
-import SideVideo from "./SideVideo";
+// import SideVideo from "./SideVideo";
 import axios from "axios";
 
 // API KEY "api_key": "ffb22bc6-6976-404c-9cd6-c366bb70ee9b"
@@ -78,9 +78,6 @@ class Home extends React.Component {
           <div className="all-components__one">
             <Main main={this.state.main[0]} />
             <Comments comments={this.state.comments} />
-          </div>
-          <div className="all-components__two">
-            <SideVideo sideVideos={this.state.sideVideos} />
           </div>
         </div>
       </div>

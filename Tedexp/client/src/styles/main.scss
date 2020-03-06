@@ -23,15 +23,6 @@ body {
 @import "./partials/sidevideo";
 @import "./partials/upload";
 
-@include large {
-  .all-components__main {
-    display: flex;
-  }
-  .all-components__two {
-    border-left: 1px solid $mercury;
-  }
-}
-
 // Loading donut animation
 .loading__container {
   display: flex;

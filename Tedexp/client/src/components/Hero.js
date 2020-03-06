@@ -1,12 +1,17 @@
 import React from "react";
-import video from "../assets/Video/BrainStation Sample Video.mp4";
 
 export default function Hero(props) {
   return (
     <div className="hero">
-      <video className="hero__video" poster={props.hero} controls>
-        <source src={video} type="video/mp4" />
-      </video>
+      <div className="hero__image">
+        <div className="hero__text-container">
+          <div className="hero__main-text">
+            <h1 className="hero__title">TED Student Experience</h1>
+            <h2 className="hero__subtitle">Connecting you to speakers</h2>
+          </div>
+          <h2 className="hero__subtitle-one">What interests you?</h2>
+        </div>
+      </div>
     </div>
   );
 }

@@ -1,38 +1,45 @@
-/* mobile-styling-start */
-.hero {
-  height: 57.19vw;
-  &__video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    &:focus {
-      outline-width: 0;
-    }
-  }
-}
-/* mobile-styling-end */
-
-/* tablet-styling-start */
-@include medium {
-  .hero {
-    height: 25rem;
-    background-color: black;
-    text-align: center;
-    &__video {
-      width: 43.75rem;
-      height: 100%;
-      object-fit: cover;
-    }
-  }
-}
-/* tablet-styling-end */
-
 /* desktop-styling-start */
 @include large {
   .hero {
-    height: 33.75rem;
-    &__video {
-      width: 59rem;
+    height: 670px;
+    text-align: center;
+    background-image: url("../assets/Images/Hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    &__image {
+      height: 670px;
+      background-color: rgba($black, 0.5);
+      padding: 0 1rem 0 1rem;
+    }
+    &__text-container {
+      height: 670px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    &__title {
+      font-family: Inter;
+      color: white;
+      font-weight: 800;
+      text-align: center;
+      margin: 0;
+    }
+    &__subtitle {
+      font-family: Inter;
+      color: white;
+      font-weight: 500;
+      text-align: center;
+      margin: 0;
+    }
+    &__subtitle-one {
+      font-family: Inter;
+      color: white;
+      font-weight: 500;
+      text-align: center;
+      margin: 0;
     }
   }
 }

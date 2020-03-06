@@ -1,7 +1,6 @@
 import React from "react";
-import logo from "../assets/Logo/Logo-brainflix.svg";
-import searchIcon from "../assets/Icons/SVG/Icon-search.svg";
-import plusIcon from "../assets/Icons/SVG/Icon-upload.svg";
+import logo from "../assets/Logo/TEDlogo.svg";
+import slogan from "../assets/Logo/slogan.png";
 import { Link } from "react-router-dom";
 
 export default function Header() {
@@ -11,29 +10,15 @@ export default function Header() {
         <div className="header__logo-container">
           <Link to="/" className="header__logo-container--link">
             <img className="header__logo" src={logo} alt="" />
+            <img className="header__slogan" src={slogan} alt="" />
           </Link>
         </div>
-
-        <div className="header__search-container">
-          <img
-            className="header__search-container--icon"
-            src={searchIcon}
-            alt=""
-          />
-          <h4 className="header__search-container--search">Search</h4>
-        </div>
-        <div className="header__upload-container">
-          <Link className="header__upload-container--link" to="/upload">
-            <button className="header__upload-container-inner">
-              <img
-                className="header__upload-container-inner--icon"
-                src={plusIcon}
-                alt=""
-              />
-              <h4 className="header__upload-container-inner--upload">UPLOAD</h4>
-            </button>
-          </Link>
-          <div className="header__upload-container--mohan"></div>
+        <div className="header__link-container">
+          <h1 className="header__link-container--text">WATCH</h1>
+          <h1 className="header__link-container--text">DISCOVER</h1>
+          <h1 className="header__link-container--text">ATTEND</h1>
+          <h1 className="header__link-container--text">PARTICIPATE</h1>
+          <h1 className="header__link-container--text">ABOUT</h1>
         </div>
       </header>
     </div>
